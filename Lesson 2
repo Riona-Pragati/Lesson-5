@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My School</title>
+</head>
+<body>
+    <h1>My School</h1>
+    <b>I study in St.Joseph's Catholic School.</b><br>
+    <strong>It is in Canada</strong><br>
+    <i>I am moving to 8<sup>th</sup>grade.</i><br>
+    <em>The board of the school is CDSBEO.</em><br>
+    <mark>More than 1000 students enrolled here.</mark><br>
+    <small>They teach very well</small><br>
+</body>
+</html>
