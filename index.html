@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function generateRandomNumbers(count, min, max) {
+            let randomNumbers = [];
+            for (let i = 0; i < count; i++) {
+                let num = Math.floor(Math.random() * (max - min + 1)) + min;
+                randomNumbers.push(num);
+            }
+            return randomNumbers;
+        }
+
+        function getCurrentDate() {
+            const today = new Date();
+            let dayOfWeek;
+
+            switch (today.getDay()) {
+                case 0: dayOfWeek = "Sunday"; break;
+                case 1: dayOfWeek = "Monday"; break;
+                case 2: dayOfWeek = "Tuesday"; break;
+                case 3: dayOfWeek = "Wednesday"; break;
+                case 4: dayOfWeek = "Thursday"; break;
+                case 5: dayOfWeek = "Friday"; break;
+                case 6: dayOfWeek = "Saturday"; break;
+                default: dayOfWeek = "Unknown";
+            }
+
+            return `${dayOfWeek}, ${today.toLocaleString('default', { month: 'short' })} ${today.getDate()}, ${today.getFullYear()}`;
+        }
+
+        console.log("");
+
+        const todayDate = getCurrentDate();
+        console.log("Current Date:", todayDate);
+
+        const myRandomSet = generateRandomNumbers(5, 1, 100);
+        console.log("Random Numbers (1-100):", myRandomSet.join(', '));
+
+        const anotherSet = generateRandomNumbers(3, 1000, 2000);
+        console.log("Random Numbers (1000-2000):", anotherSet.join(', '));
+
+        let testNum = 7;
+        console.log(`\nTesting number ${testNum}:`);
+        switch (testNum) {
+            case 0: console.log("It's zero!"); break;
+            case 7: console.log("It's lucky seven!"); break;
+            default: console.log("Not zero or seven.");
+        }
+    </script>
+</body>
+</html>
+
